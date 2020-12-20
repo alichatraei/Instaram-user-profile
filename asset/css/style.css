@@ -1,0 +1,13 @@
+/* Fonts */
+@font-face {
+  font-family: "iransans";
+  src: url("iransans.woff");
+}
+/* all */
+* {
+  font-family: "iransans";
+}
+html,
+body {
+  height: 100%;
+}
