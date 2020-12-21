@@ -11,13 +11,46 @@
     <link rel="stylesheet" href="asset/css/style.css" />
   </head>
   <body class="bg-secondary d-flex align-items-center">
-    <main class="container bg-white rounded shadow">
-      <header class="row my-3">
-        <p class="lead col text-center">دریافت اطلاعات از اینستاگرام</p>
+    <!-- Initial Design -->
+    <main class="container bg-white rounded shadow py-4">
+      <!-- About program -->
+      <header class="row">
+        <p class="lead col text-center">دانلود پست اینستاگرام</p>
       </header>
-      <hr class="w-75 mx-auto">
-      <nav class="row mt-0">
-        <p class="col text-center">نام کاربری شخص مورد نظر را وارد نمایید</p>
+      <!-- How Works text -->
+      <hr class="w-75 mx-auto" />
+      <nav class="row">
+        <p class="col text-center">لینک پست دلخواه خود را وارد کنید</p>
+      </nav>
+      <!-- Form -->
+      <form class="container">
+        <nav class="row justify-content-center">
+          <input
+            type="text"
+            class="form-control w-50 col-md-8 col-sm g-3 text-center"
+            placeholder="https://www.instagram.com/p/CI_Aa5mASYF"
+            id="username"
+          />
+          <button class="btn btn-primary col-md-4 col-sm mx-3 g-3">
+            دانلود پست
+          </button>
+        </nav>
+      </form>
+    </main>
+    <!-- show Information -->
+    <main class="container bg-white rounded shadow py-4">
+      <!-- Display nav -->
+      <nav class="row justify-content-center">
+        <img
+          src=""
+          alt=""
+          class="img-thumbnail img-fluid w-25 rounded h-100"
+          id="display-pic"
+        />
+      </nav>
+      <!-- Button nav -->
+      <nav class="row justify-content-center mt-4">
+        <button class="btn btn-primary col-md-2 col-sm">دانلود</button>
       </nav>
     </main>
   </body>
