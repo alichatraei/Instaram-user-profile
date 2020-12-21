@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>اینستاگرام</title>
+    <title>اینستادانلودر</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css"
@@ -29,9 +29,12 @@
             type="text"
             class="form-control w-50 col-md-8 col-sm g-3 text-center"
             placeholder="https://www.instagram.com/p/CI_Aa5mASYF"
-            id="username"
+            id="postURL"
           />
-          <button class="btn btn-primary col-md-4 col-sm mx-3 g-3">
+          <button
+            class="btn btn-primary col-md-4 col-sm mx-3 g-3"
+            id="btnSubmit"
+          >
             دانلود پست
           </button>
         </nav>
@@ -42,16 +45,21 @@
       <!-- Display nav -->
       <nav class="row justify-content-center">
         <img
-          src=""
           alt=""
-          class="img-thumbnail img-fluid w-25 rounded h-100"
+          class="img-thumbnail img-fluid w-75 rounded h-100"
           id="display-pic"
         />
       </nav>
       <!-- Button nav -->
       <nav class="row justify-content-center mt-4">
-        <button class="btn btn-primary col-md-2 col-sm">دانلود</button>
+        <a class="w-auto" id="downloadLink"
+          ><button class="btn btn-primary w-100">دانلود</button></a
+        >
       </nav>
     </main>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/ui.js"></script>
+    <script src="asset/js/data.js"></script>
+    <script src="asset/js/app.js"></script>
   </body>
 </html>
