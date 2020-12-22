@@ -8,6 +8,11 @@ class Data extends UI {
   async fetchData(postURL) {
     //Create URL for fetch API
     let URL = `https://instagram40.p.rapidapi.com/media-info-by-url?url=${postURL}`;
+    //show spinner
+    let spinner = document.createElement("nav"),
+      spinnerNav = document.querySelector("#spinnerNav");
+    spinner.setAttribute("class", "spinner-grow mx-auto text-dark");
+    spinnerNav.appendChild(spinner);
     //fetch API
     await fetch(URL, {
       method: "GET",
@@ -15,12 +20,15 @@ class Data extends UI {
         "x-rapidapi-key": this.key,
         "x-rapidapi-host": this.rapidApiHost,
       },
-    })
-      .then((response) => {
-        response.json().then((data) => this.showData(data));
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    }).then((response) => {
+      response
+        .json()
+        .then((data) => this.showData(data))
+        .catch(() => {
+          this.invalidStatusError();
+        });
+      // remove spinner
+      spinner.remove();
+    });
   }
 }

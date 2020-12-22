@@ -23,7 +23,7 @@
         <p class="col text-center">لینک پست دلخواه خود را وارد کنید</p>
       </nav>
       <!-- Form -->
-      <form class="container">
+      <form class="container justify-content-center">
         <nav class="row justify-content-center">
           <input
             type="text"
@@ -38,20 +38,20 @@
             دانلود پست
           </button>
         </nav>
+        <!-- show spinner -->
+        <nav class="text-center mt-4" id="spinnerNav"></nav>
       </form>
-    </main>
-    <!-- show Information -->
-    <main class="container bg-white rounded shadow py-4">
       <!-- Display nav -->
-      <nav class="row justify-content-center">
-        <img
-          alt=""
-          class="img-thumbnail img-fluid w-75 rounded h-100"
-          id="display-pic"
-        />
+      <nav class="row justify-content-center mt-4 showResult">
+        <figure class="figure w-25 rounded h-25 border">
+          <img alt="" class="img-thumbnail img-fluid" id="display-pic" />
+          <figcaption class="figure-caption text-center mt-2">
+            نوع داده
+          </figcaption>
+        </figure>
       </nav>
       <!-- Button nav -->
-      <nav class="row justify-content-center mt-4">
+      <nav class="row justify-content-center mt-4 showResult">
         <a class="w-auto" id="downloadLink"
           ><button class="btn btn-primary w-100">دانلود</button></a
         >

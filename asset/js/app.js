@@ -12,5 +12,6 @@ function eventListeners() {
     e.preventDefault();
     //empty validation
     if (postURL.value.length !== 0) data.fetchData(postURL.value);
+    else ui.validateInput(postURL);
   });
 }
